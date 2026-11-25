@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Organizer Dashboard – Cultural Fest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>Organizer dashboard</h1>
+    <p>Create events, publish them, and review who has signed up.</p>
+  </div>
+  <div class="bar">
+    <button id="seed">Load demo data</button>
+    <button class="primary" id="newEvent">New event</button>
+  </div>
+</header>
+<main>
+  <section class="stats" id="stats" aria-label="Totals"></section>
+  <div class="bar tabs" id="filters" role="group" aria-label="Filter events"></div>
+  <div class="table" id="listWrap"></div>
+</main>
+
+<dialog id="formDlg"><form class="dlg" id="eventForm" novalidate></form></dialog>
+<dialog id="partDlg"><div class="dlg" id="partBody"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
